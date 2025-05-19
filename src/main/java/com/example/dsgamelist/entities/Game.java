@@ -26,8 +26,8 @@ public class Game {
     private String imgUrl;
 
     @Column(columnDefinition = "TEXT")
-    private String long_description;
+    private String longDescription;
 
     @Column(columnDefinition = "TEXT")
-    private String short_description;
+    private String shortDescription;
 }
