@@ -25,7 +25,6 @@ public class GameController {
     }
 
     @GetMapping
-
     public List<GameMinDTO> findAll(){
         return gameService.findAll();
     }
