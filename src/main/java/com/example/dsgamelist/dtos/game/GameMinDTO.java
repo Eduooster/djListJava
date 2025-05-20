@@ -1,4 +1,4 @@
-package com.example.dsgamelist.dtos;
+package com.example.dsgamelist.dtos.game;
 
 import com.example.dsgamelist.entities.Game;
 import lombok.Data;
@@ -21,6 +21,14 @@ public class GameMinDTO {
         year = entity.getYear();
         shortDescription = entity.getShortDescription();
 
+    }
+
+    public GameMinDTO(GameMinProjection projection){
+        id = projection.getId();
+        title = projection.getTitle();
+        imgUrl = projection.getImage();
+        year = projection.getYears();
+        shortDescription = projection.getShortDescription();
     }
 
 }
